@@ -1,0 +1,23 @@
+@import '../partials/variables';
+
+
+label{
+    &.error{
+        &:after{
+            content: '\e801';
+            font-family: 'fontello';
+            color: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 12px;
+        }
+    }
+    &.success{
+        &:after{
+            content: '\e800';
+            font-family: 'fontello';
+            color: green;
+        }
+    }
+}
