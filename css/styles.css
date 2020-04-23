@@ -216,7 +216,8 @@
   font-family: 'Metropolis';
   border: none;
   background: #EF3651;
-  color: #F6F6F6;
+  border: 1px solid #EF3651;
+  color: #F5F5F5;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
@@ -238,6 +239,16 @@
 
 .button:hover {
   background: #e01230;
+  border-color: #e01230;
+}
+
+.button.outline {
+  background: transparent;
+  border-color: #F5F5F5;
+}
+
+.button.outline:hover {
+  border-color: rgba(245, 245, 245, 0.2);
 }
 
 label.error:after {
@@ -263,5 +274,6 @@ body {
   -webkit-box-shadow: 0px 0px 40px 0px #9c9c9c;
           box-shadow: 0px 0px 40px 0px #9c9c9c;
   font-family: 'Metropolis';
+  background: #1E1F28;
 }
 /*# sourceMappingURL=styles.css.map */

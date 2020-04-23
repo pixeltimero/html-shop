@@ -19,7 +19,8 @@
     font-family: 'Metropolis';
     border: none;
     background: $color-primary;
-    color: $color-white;
+    border: 1px solid $color-primary;
+    color: $color-text;
     font-size: 14px;
     line-height: 20px;
     text-decoration: none;
@@ -37,5 +38,12 @@
     }
     &:hover{
         background: darken($color-primary, 10%);
+        border-color: darken($color-primary, 10%);
+    }
+    &.outline{
+        background: transparent;
+        border-color: $color-text;
+        &:hover{
+            border-color: rgba($color-text, 0.2);}
     }
 }
