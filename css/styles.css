@@ -251,6 +251,18 @@
   border-color: rgba(245, 245, 245, 0.2);
 }
 
+.button.small {
+  padding: 8px 25px;
+  text-transform: inherit;
+  display: inline-block;
+  width: auto;
+  margin-right: 20px;
+}
+
+.button.small:last-child {
+  margin-right: 0;
+}
+
 label.error:after {
   content: '\e801';
   font-family: 'fontello';

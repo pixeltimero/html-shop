@@ -1,21 +1,14 @@
 @import '../partials/variables';
 
-
-
-@mixin button {
-    border-radius: 25px;
-    padding: 14px;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-
-
 .component-buttons{
     padding: 16px;
 }
 .button{
-    @include button();
+    // PRIMARY BUTTON STYLES
+    border-radius: 25px;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 20px;
     font-family: 'Metropolis';
     border: none;
     background: $color-primary;
@@ -40,10 +33,22 @@
         background: darken($color-primary, 10%);
         border-color: darken($color-primary, 10%);
     }
+    // OUTLINE BUTTON STYLES
     &.outline{
         background: transparent;
         border-color: $color-text;
         &:hover{
             border-color: rgba($color-text, 0.2);}
+    }
+    // SMALL BUTTON STYLES
+    &.small{
+        padding: 8px 25px;
+        text-transform: inherit;
+        display: inline-block;
+        width: auto;
+        margin-right: 20px;
+        &:last-child{
+            margin-right: 0;
+        }
     }
 }
