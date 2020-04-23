@@ -26,19 +26,24 @@
     width: 100%;
     transition: all .3s;
     text-transform: uppercase;
+    i{
+        margin-right: 4px;
+    }
     &:last-child{
         margin-bottom: 0;
     }
     &:hover{
-        background: darken($color-primary, 10%);
-        border-color: darken($color-primary, 10%);
+        background: rgba($color-primary, 0.9);
+        border-color: rgba($color-primary, 0.9);
     }
     // OUTLINE BUTTON STYLES
     &.outline{
         background: transparent;
         border-color: $color-text;
         &:hover{
-            border-color: rgba($color-text, 0.2);}
+            border-color: $color-gray;
+            color: $color-gray;
+        }
     }
     // SMALL BUTTON STYLES
     &.small{

@@ -233,13 +233,17 @@
   text-transform: uppercase;
 }
 
+.button i {
+  margin-right: 4px;
+}
+
 .button:last-child {
   margin-bottom: 0;
 }
 
 .button:hover {
-  background: #e01230;
-  border-color: #e01230;
+  background: rgba(239, 54, 81, 0.9);
+  border-color: rgba(239, 54, 81, 0.9);
 }
 
 .button.outline {
@@ -248,7 +252,8 @@
 }
 
 .button.outline:hover {
-  border-color: rgba(245, 245, 245, 0.2);
+  border-color: #ABB4BD;
+  color: #ABB4BD;
 }
 
 .button.small {
@@ -281,7 +286,6 @@ label.success:after {
 
 body {
   width: 375px;
-  height: 812px;
   margin: 0px auto;
   -webkit-box-shadow: 0px 0px 40px 0px #9c9c9c;
           box-shadow: 0px 0px 40px 0px #9c9c9c;
