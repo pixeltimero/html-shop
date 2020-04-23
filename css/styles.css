@@ -204,7 +204,7 @@
 }
 
 /* '' */
-label.error:after {
+label#error:after {
   content: '\e801';
   font-family: 'fontello';
   color: red;
@@ -214,10 +214,109 @@ label.error:after {
   font-size: 12px;
 }
 
-label.success:after {
+label#check:after {
   content: '\e800';
   font-family: 'fontello';
   color: green;
+}
+
+body {
+  background: #1E1F28;
+}
+
+label {
+  position: relative;
+  display: block;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  color: #F5F5F5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  width: 100%;
+  background: #2A2C36;
+  border-radius: 4px;
+  border-color: #2A2C36;
+  height: 64px;
+  padding-left: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input::-webkit-input-placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ABB4BD;
+}
+
+input:-ms-input-placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ABB4BD;
+}
+
+input::-ms-input-placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ABB4BD;
+}
+
+input::placeholder {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ABB4BD;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus + span {
+  opacity: 1;
+  margin-left: 20px;
+  top: 14px;
+}
+
+span {
+  top: 0;
+  margin-left: 20px;
+  position: absolute;
+  font-family: Metropolis;
+  font-size: 11px;
+  line-height: 11px;
+  color: #ABB4BD;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
