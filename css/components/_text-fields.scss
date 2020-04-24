@@ -24,6 +24,7 @@ label{
 body{
     background: #1E1F28;
 }
+
 div{
     position: relative;
     display: block;
@@ -75,6 +76,7 @@ span{
 }
 
 .error{
+    margin-bottom: 0;
     &:after{
         content: '\e801';
         font-family: 'fontello';
@@ -83,7 +85,8 @@ span{
         margin-top: -40px;
         margin-left:300px;
         font-size: 14px;
-        opacity: 1;    
+        opacity: 1;   
+         
       }     
 }
 .check{
@@ -101,15 +104,89 @@ span{
 .promocode{
     display: flex;
     margin: 0;
+    margin-bottom: 20px;
     input{
         height:36px;
-    }
+        border-radius: 8px 35px 35px 8px;
+        &::placeholder{
+            font-family: Metropolis;
+            font-size: 14px;
+            line-height: 20px;
+            color: #ABB4BD;
+        }
+    } 
     button{
-        margin-left: -34px;
+        background: #ABB4BD;
         border-radius: 50%;
         width: 34px;
         height: 34px;
-        background: #ABB4BD;
+        margin-left: -34px;
+        border: none;   
     }
 }
 
+.mypromocode{
+    display: flex;
+    margin: 0;
+    margin-bottom: 20px;
+    input{
+        height:36px;
+        border-radius: 8px;
+        &::placeholder{
+            font-family: Metropolis;
+            font-size: 14px;
+            line-height: 20px;
+            color: #F5F5F5;
+        }
+    }
+    button{
+        margin-left: -34px;
+        color: #ABB4BD;
+        background-color: #2A2C36;
+        border: none;
+        border-radius: 35%;
+        
+        height: 34px;
+    }
+}
+.textfieldssmall{
+    margin-top: 50px;
+}
+.mypromocodered{
+    position: relative;
+    display: flex;
+    margin: 0;
+    input{
+        height:36px;
+        border-radius: 8px;
+        &::placeholder{
+            font-family: Metropolis;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FF2424;
+        }
+    }
+    button{
+        margin-left: -34px;
+        color: #FF2424;
+        background-color: #2A2C36;
+        border: none;
+        border-radius: 35%;
+       
+        height: 34px;
+    }
+   
+}
+p{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 20px;
+    font-family: Metropolis;
+    font-size: 11px;
+    line-height: 11px;
+    color: #FF2424;
+   
+}
+.erlab{
+    margin-left: 36px;
+}

@@ -383,6 +383,10 @@ span {
   transition: all 0.2s ease-in-out;
 }
 
+.error {
+  margin-bottom: 0;
+}
+
 .error:after {
   content: '\e801';
   font-family: 'fontello';
@@ -410,18 +414,167 @@ span {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .promocode input {
   height: 36px;
+  border-radius: 8px 35px 35px 8px;
+}
+
+.promocode input::-webkit-input-placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ABB4BD;
+}
+
+.promocode input:-ms-input-placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ABB4BD;
+}
+
+.promocode input::-ms-input-placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ABB4BD;
+}
+
+.promocode input::placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ABB4BD;
 }
 
 .promocode button {
-  margin-left: -34px;
+  background: #ABB4BD;
   border-radius: 50%;
   width: 34px;
   height: 34px;
-  background: #ABB4BD;
+  margin-left: -34px;
+  border: none;
+}
+
+.mypromocode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.mypromocode input {
+  height: 36px;
+  border-radius: 8px;
+}
+
+.mypromocode input::-webkit-input-placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #F5F5F5;
+}
+
+.mypromocode input:-ms-input-placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #F5F5F5;
+}
+
+.mypromocode input::-ms-input-placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #F5F5F5;
+}
+
+.mypromocode input::placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #F5F5F5;
+}
+
+.mypromocode button {
+  margin-left: -34px;
+  color: #ABB4BD;
+  background-color: #2A2C36;
+  border: none;
+  border-radius: 35%;
+  height: 34px;
+}
+
+.textfieldssmall {
+  margin-top: 50px;
+}
+
+.mypromocodered {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.mypromocodered input {
+  height: 36px;
+  border-radius: 8px;
+}
+
+.mypromocodered input::-webkit-input-placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FF2424;
+}
+
+.mypromocodered input:-ms-input-placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FF2424;
+}
+
+.mypromocodered input::-ms-input-placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FF2424;
+}
+
+.mypromocodered input::placeholder {
+  font-family: Metropolis;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FF2424;
+}
+
+.mypromocodered button {
+  margin-left: -34px;
+  color: #FF2424;
+  background-color: #2A2C36;
+  border: none;
+  border-radius: 35%;
+  height: 34px;
+}
+
+p {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 20px;
+  font-family: Metropolis;
+  font-size: 11px;
+  line-height: 11px;
+  color: #FF2424;
+}
+
+.erlab {
+  margin-left: 36px;
 }
 
 body {
