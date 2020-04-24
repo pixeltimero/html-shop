@@ -2,6 +2,13 @@
 
 .component-buttons{
     padding: 16px;
+    border: 1px solid $color-text;
+    .title{
+        text-align: center;
+        color: $color-text;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
 }
 .button{
     // PRIMARY BUTTON STYLES
@@ -26,6 +33,8 @@
     width: 100%;
     transition: all .3s;
     text-transform: uppercase;
+    outline: none;
+    box-shadow: none;
     i{
         margin-right: 4px;
     }
@@ -54,6 +63,31 @@
         margin-right: 20px;
         &:last-child{
             margin-right: 0;
+        }
+    }
+    // ICON BUTTON STYLES
+    &.icon{
+        width: 52px;
+        height: 52px;
+        font-size: 26px;
+        border-radius: 50%;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        i{
+            &:before{
+                line-height: 52px;
+            }
+        }
+        &.small{
+            width: 36px;
+            height: 36px;
+            font-size: 18px;
+            i{
+                &:before{
+                    line-height: 36px;
+                }
+            }
         }
     }
 }
