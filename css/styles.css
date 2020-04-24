@@ -359,18 +359,27 @@
   display: inline-block;
 }
 
-.button.icon i:before {
+.button.icon i, .button.icon i:before {
+  margin: 0;
+  width: 52px;
+  text-align: center;
   line-height: 52px;
+  margin-top: -0.5px;
+  margin-left: -0.5px;
 }
 
 .button.icon.small {
   width: 36px;
   height: 36px;
-  font-size: 18px;
 }
 
-.button.icon.small i:before {
+.button.icon.small i, .button.icon.small i:before {
+  width: 36px;
+  height: 36px;
   line-height: 36px;
+  font-size: 18px;
+  margin-top: -0.5px;
+  margin-left: -0.5px;
 }
 
 label#error:after {

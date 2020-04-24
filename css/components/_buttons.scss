@@ -74,19 +74,24 @@
         padding: 0;
         text-align: center;
         display: inline-block;
-        i{
-            &:before{
-                line-height: 52px;
-            }
+        i, i:before{
+            margin: 0;
+            width: 52px;
+            text-align: center;
+            line-height: 52px;
+            margin-top: -0.5px;
+            margin-left: -0.5px;
         }
         &.small{
             width: 36px;
             height: 36px;
-            font-size: 18px;
-            i{
-                &:before{
-                    line-height: 36px;
-                }
+            i, i:before{
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
+                font-size: 18px;
+                margin-top: -0.5px;
+                margin-left: -0.5px;
             }
         }
     }
