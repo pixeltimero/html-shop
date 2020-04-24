@@ -278,7 +278,7 @@ label#error:after {
   font-size: 12px;
 }
 
-label#check:after {
+label .check1:after {
   content: '\e800';
   font-family: 'fontello';
   color: green;
@@ -288,7 +288,7 @@ body {
   background: #1E1F28;
 }
 
-label {
+div {
   position: relative;
   display: block;
   margin-left: 16px;
@@ -381,6 +381,47 @@ span {
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.error:after {
+  content: '\e801';
+  font-family: 'fontello';
+  color: #FF2424;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 300px;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.check:after {
+  content: '\e800';
+  font-family: 'fontello';
+  color: #55D85A;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 300px;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.promocode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.promocode input {
+  height: 36px;
+}
+
+.promocode button {
+  margin-left: -34px;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background: #ABB4BD;
 }
 
 body {
